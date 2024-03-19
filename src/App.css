@@ -1,0 +1,139 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Reset di base per rimuovere i margini e i padding predefiniti */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stile generale del corpo della pagina */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Nero */
+  color: #ffeb3b; /* Giallo */
+  line-height: 1.6;
+}
+
+/* Intestazioni con colore di sfondo giallo */
+header {
+  background-color: #ffeb3b; /* Giallo */
+  color: #000; /* Nero */
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Stile per i link */
+a {
+  color: #ffeb3b; /* Giallo */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Contenitore principale per il contenuto */
+.container {
+  padding: 20px;
+}
+
+/* Stile per i bottoni */
+button {
+  background-color: #ffeb3b; /* Giallo */
+  color: #000; /* Nero */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+select {
+  background-color: #ffeb3b; /* Giallo */
+  color: #000; /* Nero */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  font-size: 13come fpx;
+  overflow: hidden;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  height: auto;
+}
+
+input{
+  background-color: #ffeb3b; /* Giallo */
+  color: #000; /* Nero */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+/* Stile per il piè di pagina */
+footer {
+  background-color: #000; /* Nero */
+  color: #ffeb3b; /* Giallo */
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
