@@ -14,6 +14,7 @@ export const fetchRadioData = async (query: string) => {
       headers: {
         Authorization: 'Bearer HSf2Zppryj4kXk6UMw3xvGYbmKKVfN3ACu17ycRsEwGp',
       },
+
     });
 
     console.log(response.data);

@@ -55,7 +55,9 @@ const MainStream: React.FC = () => {
       <h2>{selectRadio?.name}</h2>
       <MediaPlayer url={selectRadio?.streams[0].url || ''}/>
 
-      <img src={selectRadio?.logo || ''} alt={selectRadio?.name || ''} ></img>
+      <img src={selectRadio?.logo || ''} alt={selectRadio?.name || ''} className="immagine-rotante"></img><br></br>
+
+      <button onClick={() => navigator.clipboard.writeText(selectRadio?.website || '')}>COPY WEBSITE LINK</button>
       
     </div>
   );

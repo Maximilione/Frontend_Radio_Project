@@ -5,6 +5,16 @@
   text-align: center;
 }
 
+button{
+  background-color: #ffeb3b; /* Giallo */
+  color: #000; /* Nero */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  align-items: center;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -109,8 +119,13 @@ select {
 img {
   width: 200px;
   height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 200px;
+  max-height: 200px;
   margin: 20px auto;
   height: auto;
+  align: center;
 }
 
 input{
@@ -136,4 +151,19 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.immagine-rotante {
+  animation: rotate 4s infinite linear;
+
+}
+
 
