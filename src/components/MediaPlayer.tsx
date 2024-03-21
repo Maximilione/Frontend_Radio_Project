@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const MediaPlayer = ({ url }: { url: string }, is_video: boolean) => {
   

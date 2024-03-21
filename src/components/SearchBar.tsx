@@ -8,7 +8,7 @@ interface SearchbarProps{
   radioList: Radio[];
 }
 
-const SearchBar: React.FC<SearchbarProps> = ({ onRadioSelect, radioList }) => {
+const SearchBar: React.FC<SearchbarProps> = ({ onRadioSelect }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState<Radio[]>([]);
   const [debouncedSearchTerm] = useDebounce(searchTerm, 500);

@@ -37,10 +37,8 @@ const MainStream: React.FC = () => {
   []);
 
   const [selectRadio, setSelectRadio] = useState<Radio | null>(null);
-  const [selectRadioId, setSelectRadioId] = useState<number | null>(null);
   const handleRadioSelect = (radio: any) => {
     setSelectRadio(radio);
-    setSelectRadioId(radio.id);
   };
 
   console.log(selectRadio?.streams[0].url);
