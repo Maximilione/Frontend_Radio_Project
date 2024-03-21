@@ -34,7 +34,8 @@ L'integrazione con l'API pubblica è stata gestita utilizzando Axios per effettu
 
 ## Implementazione del Player Audio/Video
 
-Il player audio/video è stato implementato utilizzando la libreria HTML5 `<audio>`/`<video>` per la riproduzione dei flussi live. La gestione del player è stata integrata con lo stato dell'applicazione tramite Redux per permettere un controllo centralizzato.
+Il player audio/video è stato implementato utilizzando la libreria HTML5 `<audio>`/`<video>` per la riproduzione dei flussi live. Per i controlli dei flussi Audio/Video sono stati implementati dei bottoni personalizzati. La gestione del player è stata integrata con lo stato dell'applicazione tramite Redux per permettere un controllo centralizzato.
+
 
 
 ---

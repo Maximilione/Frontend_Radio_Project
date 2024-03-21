@@ -16,10 +16,12 @@ export const fetchRadioData = async (query: string) => {
       },
 
     });
-    
 
-    console.log(response.data);
-    return response.data;
+    const filteredData = response.data.items.filter((item: any) => item.streams[0].is_online === true );
+
+    console.log(filteredData);
+
+    return { items: filteredData };
   } catch (error) {
     console.error('Errore nella richiesta API:', error);
     throw error;

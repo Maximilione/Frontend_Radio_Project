@@ -24,8 +24,7 @@ const AudioPlayer = ({ streamUrl }: { streamUrl: string }) => {
       audioRef.current.volume = parseFloat(e.target.value);
     }
   };
-  
-  // JSX per i controlli personalizzati
+
   return (
     <div>
       <audio ref={audioRef} src={streamUrl} preload="none" />
@@ -34,6 +33,7 @@ const AudioPlayer = ({ streamUrl }: { streamUrl: string }) => {
       </button><br></br>
       <h3>Volume</h3><br></br>
       <input type="range" min="0" max="1" step="0.01" onChange={changeVolume} /><br></br>
+
     </div>
   );
 };
