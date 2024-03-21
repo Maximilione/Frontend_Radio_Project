@@ -51,7 +51,7 @@ const MainStream: React.FC = () => {
       <SearchBar onRadioSelect={handleRadioSelect} radioList={radioList} /><br></br>
 
       <h2>{selectRadio?.name}</h2>
-      <MediaPlayer url={selectRadio?.streams[0].url || ''}/>
+      <MediaPlayer url={selectRadio?.streams[0].url || ''} is_video={selectRadio?.streams[0].is_video || false}/>
 
       <img src={selectRadio?.logo || ''} alt={selectRadio?.name || ''} className="immagine-rotante"></img><br></br>
 

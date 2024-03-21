@@ -1,7 +1,13 @@
 import { useEffect } from 'react';
+import AudioPlayer from './AudioPlayer';
+import VideoPlayer from './VideoPlayer';
 
-const MediaPlayer = ({ url }: { url: string }, is_video: boolean) => {
-  
+interface MediaPlayerProps {
+  url: string;
+  is_video: boolean;
+}
+
+const MediaPlayer : React.FC<MediaPlayerProps> = ({url, is_video}) => {
 
   useEffect(() => {
     
@@ -10,11 +16,14 @@ const MediaPlayer = ({ url }: { url: string }, is_video: boolean) => {
   return (
     <div>
       {is_video ? (
-        <video src={url} controls autoPlay />
-      ) : (
-        <audio src={url} controls autoPlay />
-      )}
+        <VideoPlayer streamUrl={url} />
+      ): (
+        <AudioPlayer streamUrl={url} />
+    )
+    }
     </div>
+    
+  
   );
 };
 
