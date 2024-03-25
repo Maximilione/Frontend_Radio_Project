@@ -4,6 +4,12 @@ interface VideoPlayerProps {
   streamUrl: string;
 }
 
+/**
+ * A function to generate a video player component with controls for play, pause, and volume adjustment.
+ *
+ * @param {VideoPlayerProps} streamUrl - The URL of the video stream
+ * @return {JSX.Element} The video player component
+ */
 const VideoPlayer = ({ streamUrl }: VideoPlayerProps) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -31,7 +37,6 @@ const VideoPlayer = ({ streamUrl }: VideoPlayerProps) => {
   };
 
   return (
-
     <div className="video-player">
       <video ref={videoRef} src={streamUrl} controls={false} />
       <div className="controls">

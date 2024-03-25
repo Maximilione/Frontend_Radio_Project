@@ -3,6 +3,12 @@ import axios from 'axios';
 
 const API_URL = 'https://connect.fm-world.com/client2/radios';
 
+/**
+ * Fetches radio data from the API based on the provided query.
+ *
+ * @param {string} query - The query string to search for radio data.
+ * @return {Promise<{ items: any[] }>} - A promise that resolves to an object containing the filtered radio data.
+ */
 export const fetchRadioData = async (query: string) => {
   try {
     const response = await axios.get(API_URL, {

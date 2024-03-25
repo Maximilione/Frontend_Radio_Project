@@ -14,19 +14,19 @@ const AudioPlayer = ({ streamUrl }: { streamUrl: string }) => {
     }
   }, [isPlaying]);
 
-  // Funzioni per controllare il player
+  // Funzioni per controllare pausa e riproduzione
   const togglePlayPause = () => {
     setIsPlaying(!isPlaying);
   };
-
+// Funzione per gestire il cambio del volume
   const changeVolume = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (audioRef.current) {
       audioRef.current.volume = parseFloat(e.target.value);
     }
   };
 
-  return (
-    <div>
+  return (// audioplayer
+    <div className="audio-player">
       <audio ref={audioRef} src={streamUrl} preload="none" />
       <button onClick={togglePlayPause}>
         {isPlaying ? 'Pause' : 'Play'}

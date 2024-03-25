@@ -16,7 +16,6 @@ https://github.com/Maximilione/Frontend_Radio_Project/
 
 "npm run dev"
 
-
 L'applicazione sarà disponibile all'indirizzo `http://localhost:5173`.
 
 ## Tecnologie e Librerie Utilizzate

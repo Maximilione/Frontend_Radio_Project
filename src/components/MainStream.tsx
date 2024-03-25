@@ -16,6 +16,11 @@ const MainStream: React.FC = () => {
     if(selectRadio){
       console.log(selectRadio.streams[0].url);
     }
+    /**
+     * Fetches data from the server and updates the state with the received data.
+     *
+     * @return {Promise<void>} A promise that resolves when the data is fetched and the state is updated.
+     */
     const fetchData = async () => {
       try {
         const data = await fetchRadioData(''); // Passa il termine di ricerca desiderato
@@ -32,7 +37,7 @@ const MainStream: React.FC = () => {
       
     };
     fetchData();
-    console.log(radioList);
+    //console.log(radioList);
     }, 
   []);
 
@@ -41,9 +46,7 @@ const MainStream: React.FC = () => {
     setSelectRadio(radio);
   };
 
-  console.log(selectRadio?.streams[0].url);
-
-  return (
+  return (// mainstreamreampage
     <div className="main-stream-page">
       <h1>Live Streaming</h1>
       <h2>Seleziona un canale</h2>

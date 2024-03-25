@@ -13,7 +13,7 @@ const MediaPlayer : React.FC<MediaPlayerProps> = ({url, is_video}) => {
     
   }, [url]);
 
-  return (
+  return (// mediaplayer
     <div>
       {is_video ? (
         <VideoPlayer streamUrl={url} />
